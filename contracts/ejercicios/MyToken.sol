@@ -8,10 +8,14 @@ contract DogeCoin {
     uint8 public constant decimales = 6;
     mapping(address => uint256) public balances;
 
-    constructor(string memory _nombre, string memory _simbolo) {
+    constructor(
+        string memory _nombre,
+        string memory _simbolo,
+        address _receptor
+    ) {
         nombre = _nombre;
         simbolo = _simbolo;
-        balances[0x5B38Da6a701c568545dCfcB03FcB875f56beddC4] = 9999999999999;
+        balances[_receptor] = 9999999999999;
         // escoger a qué address se le dará el balance inicial
     }
 
