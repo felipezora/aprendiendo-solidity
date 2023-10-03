@@ -8,9 +8,9 @@ contract DogeCoin {
     uint8 public constant decimales = 6;
     mapping(address => uint256) public balances;
 
-    constructor() {
-        nombre = "DogeCoin";
-        simbolo = "DOGE";
+    constructor(string memory _nombre, string memory _simbolo) {
+        nombre = _nombre;
+        simbolo = _simbolo;
         balances[0x5B38Da6a701c568545dCfcB03FcB875f56beddC4] = 9999999999999;
         // escoger a qué address se le dará el balance inicial
     }

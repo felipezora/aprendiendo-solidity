@@ -33,6 +33,7 @@ contract Exceptions {
     // 2. Revert: se invoca para hacer que el programa lance un custom error luego de haber validado
     // una condición. Usualmente ahorra más gas que un require si no retornamos strings. Si ocurre, devuelve todo el gas restante.
 
+    // creando custom error
     error InvalidNumber(uint8 input, uint8 correctNumber); // creo mi custom error
 
     function validateNumberRevert(uint8 input) public view {
