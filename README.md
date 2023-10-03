@@ -16,5 +16,7 @@ Locación de memoria volátil donde son guardados los argumentos pasados a las f
 
 Locación de memoria exclusiva para la EVM, que usa para ejecutar los opcodes del bytecode.
 
+---
+
 En algunas ocasiones se hace necesario especificar la locación de memoria donde se almacenará determinada data. Por ejemplo, cuando tengo un parámetro de una función que es de tipo de dato string.
 Leer más en: https://docs.soliditylang.org/en/latest/types.html#data-location
